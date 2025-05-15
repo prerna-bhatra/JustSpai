@@ -27,7 +27,11 @@ const Categories: React.FC = () => {
         <div className="flex justify-content-between  gap-4 ">
 
             <div>
-                <p className="text-2xl font-semibold text-left">  Doorstep solutions for everyday problems. </p>
+                <p className="text-4xl font-semibold text-left">  Doorstep solutions for everyday   </p>
+
+                <p className="text-4xl font-semibold text-left">  problems   </p>
+
+
 
                 <div className="my-10 border border-gray p-4 text-left ">
                     <p className="text-xl">What are you looking for?</p>
