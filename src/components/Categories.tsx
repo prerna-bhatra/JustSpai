@@ -7,7 +7,15 @@ import { Link } from "react-router-dom";
 import women_salone_logo from "../images/women_salon.png"
 import men_salone_logo from "../images/men_salon.png"
 import ac_logo from "../images/ac.png"
-import cleaning_logo from "../images/cleaning_logo.jpeg"
+import cleaning_logo from "../images/cleaning_logo.png"
+import drill_machine_logo from "../images/drill_machine_logo.png"
+import water_purifier from "../images/water_purifier.png"
+import ac_repairing from "../images/ac_repair.jpeg"
+import women_wax from "../images/lazer.png"
+import men_massage from "../images/men_massage.jpeg"
+import kitchen_cleaning from "../images/kitchen.jpeg"
+
+
 
 
 
@@ -16,12 +24,12 @@ const Categories: React.FC = () => {
     const token = useSelector((state: any) => state.auth.token);
 
     return (
-        <div className="flex justify-content-between  ">
+        <div className="flex justify-content-between  gap-4 ">
 
             <div>
-                <p className="text-2xl font-semibold ">  Doorstep solutions for everyday problems. </p>
+                <p className="text-2xl font-semibold text-left">  Doorstep solutions for everyday problems. </p>
 
-                <div className="my-20 border border-gray p-4 text-left ">
+                <div className="my-10 border border-gray p-4 text-left ">
                     <p className="text-xl">What are you looking for?</p>
 
                     {/* categories name and images link */}
@@ -33,7 +41,7 @@ const Categories: React.FC = () => {
                                 <img src={women_salone_logo} alt="women salon" className="h-20 w-40" />
                             </div>
 
-                            <p>Women Salon & Spa</p>
+                            <p className="text-center">Women Salon & Spa</p>
                         </div>
 
                         <div className="cursor-pointer">
@@ -41,7 +49,7 @@ const Categories: React.FC = () => {
                                 <img src={men_salone_logo} alt="women salon" className="h-20 w-40" />
                             </div>
 
-                            <p>Men Salon & Massage</p>
+                            <p className="text-center">Men Salon & Massage</p>
                         </div>
 
                         <div className="cursor-pointer">
@@ -50,7 +58,7 @@ const Categories: React.FC = () => {
                                 <img src={ac_logo} alt="women salon" className="h-20 w-40" />
                             </div>
 
-                            <p>Ac & Appliances Repair</p>
+                            <p className="text-center">Ac & Appliances Repair</p>
                         </div>
                     </div>
 
@@ -63,24 +71,24 @@ const Categories: React.FC = () => {
                                 <img src={cleaning_logo} alt="women salon" className="h-20 w-40" />
                             </div>
 
-                            <p>Cleaning</p>
+                            <p className="text-center">Cleaning</p>
                         </div>
 
                         <div className="cursor-pointer">
                             <div className="bg-gray-200 px-4 py-2">
-                                <img src={men_salone_logo} alt="women salon" className="h-20 w-40" />
+                                <img src={drill_machine_logo} alt="women salon" className="h-20 w-40" />
                             </div>
 
-                            <p>Men Salon & Massage</p>
+                            <p className="text-center">Electrician , Plumber & carpenter</p>
                         </div>
 
                         <div className="cursor-pointer">
                             <div className="bg-gray-200 px-4 py-2">
 
-                                <img src={ac_logo} alt="women salon" className="h-20 w-40" />
+                                <img src={water_purifier} alt="women salon" className="h-20 w-40" />
                             </div>
 
-                            <p>Ac & Appliances Repair</p>
+                            <p className="text-center">Water purifier</p>
                         </div>
                     </div>
 
@@ -89,7 +97,36 @@ const Categories: React.FC = () => {
 
 
             </div>
+
+            {/* Static images */}
             <div>
+
+                <div className="flex justify-between">
+                    <div className="">
+                        <img src={ac_repairing} alt="" className="h-60" />
+                    </div>
+
+                    <div className="">
+                        <img src={women_wax} alt="" className="h-60" />
+                    </div>
+                </div>
+
+
+
+                <div className="flex justify-between">
+                    <div className="">
+                        <img src={men_massage} alt="" className="h-60" />
+                    </div>
+
+                    <div className="">
+                        <img src={kitchen_cleaning} alt="" className="h-60" />
+                    </div>
+                </div>
+
+
+
+
+
 
             </div>
         </div>
