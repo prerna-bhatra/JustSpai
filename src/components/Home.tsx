@@ -9,7 +9,8 @@ import hair_care from '../images/haircare.jpg';
 import waxing from '../images/waxing.png';
 import bleach from '../images/bleach.jpg';
 import hair_cut_beared from "../images/hair_cut_beared.jpg";
-import hair_spa from "../images/hair_spa_men.jpg";
+import hair_spa_men from "../images/hair_spa_men.jpg";
+import men_menicure from "../images/men_menicure_pedicure.jpg";
 
 
 const Home: React.FC = () => {
@@ -62,28 +63,19 @@ const Home: React.FC = () => {
             <div className='flex justify-content gap-4'>
 
                 <div>
-                    <img src={bleach} alt="" className='h-40' />
+                    <img src={hair_cut_beared} alt="" className='h-40' />
                     <p className='mt-4'>Hair cut & beared</p>
                 </div>
 
                 <div>
-                    <img src={menicure} alt="" className='h-40' />
-                    <p className='mt-4'>Menicure</p>
+                    <img src={hair_spa_men} alt="" className='h-40' />
+                    <p className='mt-4'>Hair Color and Spa</p>
                 </div>
 
                 <div>
-                    <img src={pedicure} alt="" className='h-40' />
-                    <p className='mt-4'>Pedicure</p>
+                    <img src={men_menicure} alt="" className='h-40' />
+                    <p className='mt-4'>Pedicure and Menicure</p>
                 </div>
-
-
-                <div>
-                    <img src={waxing} alt="" className='h-40' />
-                    <p className='mt-4'>Waxing</p>
-                </div>
-
-            
-
 
             </div>
 

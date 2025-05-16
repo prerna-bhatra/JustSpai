@@ -24,116 +24,106 @@ const Categories: React.FC = () => {
     const token = useSelector((state: any) => state.auth.token);
 
     return (
-        <div className="flex justify-content-between  gap-4 ">
+        <div className="flex flex-col lg:flex-row justify-between gap-4 p-4">
+  {/* Left Section */}
+  <div className="w-full lg:w-1/2">
+    <p className="text-2xl sm:text-3xl md:text-4xl font-semibold text-left">
+      Doorstep solutions for everyday
+    </p>
+    <p className="text-2xl sm:text-3xl md:text-4xl font-semibold text-left">
+      problems
+    </p>
 
-            <div>
-                <p className="text-4xl font-semibold text-left">  Doorstep solutions for everyday   </p>
+    <div className="my-10 border border-gray-300 p-4 text-left">
+      <p className="text-lg md:text-xl mb-6">What are you looking for?</p>
 
-                <p className="text-4xl font-semibold text-left">  problems   </p>
-
-
-
-                <div className="my-10 border border-gray p-4 text-left ">
-                    <p className="text-xl">What are you looking for?</p>
-
-                    {/* categories name and images link */}
-
-
-                    <div className="flex justify-between gap-4">
-                        <div className="cursor-pointer">
-                            <div className="bg-gray-200 px-4 py-2">
-                                <img src={women_salone_logo} alt="women salon" className="h-20 w-40" />
-                            </div>
-
-                            <p className="text-center">Women Salon & Spa</p>
-                        </div>
-
-                        <div className="cursor-pointer">
-                            <div className="bg-gray-200 px-4 py-2">
-                                <img src={men_salone_logo} alt="women salon" className="h-20 w-40" />
-                            </div>
-
-                            <p className="text-center">Men Salon & Massage</p>
-                        </div>
-
-                        <div className="cursor-pointer">
-                            <div className="bg-gray-200 px-4 py-2">
-
-                                <img src={ac_logo} alt="women salon" className="h-20 w-40" />
-                            </div>
-
-                            <p className="text-center">Ac & Appliances Repair</p>
-                        </div>
-                    </div>
-
-
-                    {/* category 2 */}
-
-                    <div className="flex justify-between gap-4 mt-10">
-                        <div className="cursor-pointer">
-                            <div className="bg-gray-200 px-4 py-2">
-                                <img src={cleaning_logo} alt="women salon" className="h-20 w-40" />
-                            </div>
-
-                            <p className="text-center">Cleaning</p>
-                        </div>
-
-                        <div className="cursor-pointer">
-                            <div className="bg-gray-200 px-4 py-2">
-                                <img src={drill_machine_logo} alt="women salon" className="h-20 w-40" />
-                            </div>
-
-                            <p className="text-center">Electrician , Plumber & carpenter</p>
-                        </div>
-
-                        <div className="cursor-pointer">
-                            <div className="bg-gray-200 px-4 py-2">
-
-                                <img src={water_purifier} alt="women salon" className="h-20 w-40" />
-                            </div>
-
-                            <p className="text-center">Water purifier</p>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-            </div>
-
-            {/* Static images */}
-            <div>
-
-                <div className="flex justify-between">
-                    <div className="">
-                        <img src={ac_repairing} alt="" className="h-60" />
-                    </div>
-
-                    <div className="">
-                        <img src={women_wax} alt="" className="h-60" />
-                    </div>
-                </div>
-
-
-
-                <div className="flex justify-between">
-                    <div className="">
-                        <img src={men_massage} alt="" className="h-60" />
-                    </div>
-
-                    <div className="">
-                        <img src={kitchen_cleaning} alt="" className="h-60" />
-                    </div>
-                </div>
-
-
-
-
-
-
-            </div>
+      {/* Categories Row 1 */}
+      <div className="flex flex-col sm:flex-row sm:justify-between gap-4">
+        <div className="cursor-pointer flex-1">
+          <div className="bg-gray-200 px-4 py-2">
+            <img
+              src={women_salone_logo}
+              alt="women salon"
+              className="h-20 w-full object-contain"
+            />
+          </div>
+          <p className="text-center text-sm mt-2">Women Salon & Spa</p>
         </div>
+
+        <div className="cursor-pointer flex-1">
+          <div className="bg-gray-200 px-4 py-2">
+            <img
+              src={men_salone_logo}
+              alt="men salon"
+              className="h-20 w-full object-contain"
+            />
+          </div>
+          <p className="text-center text-sm mt-2">Men Salon & Massage</p>
+        </div>
+
+        <div className="cursor-pointer flex-1">
+          <div className="bg-gray-200 px-4 py-2">
+            <img
+              src={ac_logo}
+              alt="ac repair"
+              className="h-20 w-full object-contain"
+            />
+          </div>
+          <p className="text-center text-sm mt-2">Ac & Appliances Repair</p>
+        </div>
+      </div>
+
+      {/* Categories Row 2 */}
+      <div className="flex flex-col sm:flex-row sm:justify-between gap-4 mt-10">
+        <div className="cursor-pointer flex-1">
+          <div className="bg-gray-200 px-4 py-2">
+            <img
+              src={cleaning_logo}
+              alt="cleaning"
+              className="h-20 w-full object-contain"
+            />
+          </div>
+          <p className="text-center text-sm mt-2">Cleaning</p>
+        </div>
+
+        <div className="cursor-pointer flex-1">
+          <div className="bg-gray-200 px-4 py-2">
+            <img
+              src={drill_machine_logo}
+              alt="drill"
+              className="h-20 w-full object-contain"
+            />
+          </div>
+          <p className="text-center text-sm mt-2">
+            Electrician, Plumber & Carpenter
+          </p>
+        </div>
+
+        <div className="cursor-pointer flex-1">
+          <div className="bg-gray-200 px-4 py-2">
+            <img
+              src={water_purifier}
+              alt="water"
+              className="h-20 w-full object-contain"
+            />
+          </div>
+          <p className="text-center text-sm mt-2">Water purifier</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Right Section */}
+  <div className="w-full lg:w-1/2">
+    <div className="flex flex-wrap gap-4">
+      <img src={ac_repairing} alt="" className="h-40 md:h-60 w-[48%] object-cover rounded" />
+      <img src={women_wax} alt="" className="h-40 md:h-60 w-[48%] object-cover rounded" />
+      <img src={men_massage} alt="" className="h-40 md:h-60 w-[48%] object-cover rounded" />
+      <img src={kitchen_cleaning} alt="" className="h-40 md:h-60 w-[48%] object-cover rounded" />
+    </div>
+  </div>
+</div>
+
     );
 };
 
